@@ -7,7 +7,7 @@
 
 import SwiftUI
 import PhotosUI
-import CoreTransferable
+import UniformTypeIdentifiers
 
 struct FeedbackView: View {
     @ObservedObject private var license = LicenseManager.shared
@@ -112,17 +112,17 @@ struct FeedbackView: View {
     }
 
     private func copyToTemp(_ item: PhotosPickerItem) async throws -> URL {
-        guard let representation = try await item.loadTransferable(type: FileRepresentation.self) else {
+        guard let data = try await item.loadTransferable(type: Data.self) else {
             throw LicenseError.activationFailed("附件读取失败，请重试")
         }
-        let originalName = representation.file.filename
-        let ext = (originalName as NSString).pathExtension
+        // 从内容类型推断扩展名（图片/视频均适用）
+        let ext = item.supportedContentTypes.first?.preferredFilenameExtension ?? ""
         // 用随机名避免冲突，保留原扩展名
         let dest = FileManager.default.temporaryDirectory
             .appendingPathComponent(UUID().uuidString)
             .appendingPathExtension(ext.isEmpty ? "dat" : ext)
         try? FileManager.default.removeItem(at: dest)
-        try representation.file.copy(to: dest)
+        try data.write(to: dest)
         return dest
     }
 
