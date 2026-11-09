@@ -17,6 +17,8 @@ struct FeedbackView: View {
     @State private var submitting = false
     @State private var submitted = false
     @State private var errorMessage: String?
+    @State private var history: [LicenseManager.FeedbackHistoryItem] = []
+    @State private var historyLoading = false
 
     var body: some View {
         Form {
@@ -79,16 +81,74 @@ struct FeedbackView: View {
 
             if submitted {
                 Section {
-                    Label("提交成功，感谢您的反馈！我们会尽快处理。", systemImage: "checkmark.circle.fill")
+                    Label("提交成功，感谢您的反馈！客服回复后会显示在下方。", systemImage: "checkmark.circle.fill")
                         .font(.footnote)
                         .foregroundStyle(.green)
+                }
+            }
+
+            Section("客服回复") {
+                if historyLoading {
+                    HStack {
+                        ProgressView().controlSize(.small)
+                        Text("加载中…")
+                            .foregroundStyle(.secondary)
+                    }
+                } else if history.isEmpty {
+                    Text("暂无历史反馈。提交反馈后，客服的回复会显示在这里。")
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                } else {
+                    ForEach(history) { item in
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text(item.content)
+                                .font(.subheadline)
+                            Text(item.createdAt)
+                                .font(.caption2)
+                                .foregroundStyle(.secondary)
+                            if item.replied, !item.replyNote.isEmpty {
+                                Divider()
+                                Label {
+                                    Text(item.replyNote)
+                                        .font(.footnote)
+                                } icon: {
+                                    Image(systemName: "bubble.left.and.text.bubble.right")
+                                }
+                                .foregroundStyle(.green)
+                            } else {
+                                Text("待客服回复")
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                            }
+                        }
+                        .padding(.vertical, 4)
+                    }
+                }
+                Button {
+                    loadHistory()
+                } label: {
+                    Label("刷新回复", systemImage: "arrow.clockwise")
                 }
             }
         }
         .navigationTitle("意见反馈")
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear { loadHistory() }
         .onChange(of: selectedItems) { _, newItems in
             loadPickedItems(newItems)
+        }
+    }
+
+    /// 拉取本设备的历史反馈与客服回复
+    private func loadHistory() {
+        historyLoading = true
+        Task {
+            defer { historyLoading = false }
+            do {
+                history = try await license.fetchFeedbackHistory()
+            } catch {
+                // 静默失败：不干扰提交流程，仅保留空列表
+            }
         }
     }
 
@@ -139,6 +199,7 @@ struct FeedbackView: View {
                 pendingFileURLs = []
                 // 清理临时文件
                 files.forEach { try? FileManager.default.removeItem(at: $0) }
+                loadHistory()
             } catch {
                 errorMessage = error.localizedDescription
             }

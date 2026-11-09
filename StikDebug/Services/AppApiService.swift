@@ -357,6 +357,45 @@ final class LicenseManager: ObservableObject {
         throw LicenseError.activationFailed(resp?.msg ?? "提交失败，请稍后重试")
     }
 
+    /// 本设备的单条历史反馈（含客服回复）
+    struct FeedbackHistoryItem: Identifiable {
+        let id: Int
+        let content: String
+        let createdAt: String
+        let replied: Bool
+        let replyNote: String
+    }
+
+    /// 拉取本设备的历史反馈与客服回复
+    func fetchFeedbackHistory() async throws -> [FeedbackHistoryItem] {
+        guard let token = token else {
+            throw LicenseError.activationFailed("请先激活后再提交反馈")
+        }
+        var request = URLRequest(url: AppApiConfig.baseURL.appendingPathComponent("/api/app/feedback/list"))
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = try JSONSerialization.data(withJSONObject: [
+            "device_uuid": deviceUUID,
+            "token": token,
+        ])
+        let (data, _) = try await session.data(for: request)
+        guard let obj = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
+              let code = obj["code"] as? Int, code == 0,
+              let items = obj["items"] as? [[String: Any]] else {
+            throw LicenseError.activationFailed("获取客服回复失败，请稍后重试")
+        }
+        return items.compactMap { d in
+            guard let id = d["id"] as? Int else { return nil }
+            return FeedbackHistoryItem(
+                id: id,
+                content: d["content"] as? String ?? "",
+                createdAt: d["created_at"] as? String ?? "",
+                replied: d["replied"] as? Bool ?? false,
+                replyNote: d["reply_note"] as? String ?? ""
+            )
+        }
+    }
+
     // MARK: 底层请求
 
     private func post<Response: Decodable>(path: String, body: [String: String]) async throws -> Response {
