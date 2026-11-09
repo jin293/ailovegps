@@ -19,7 +19,7 @@ struct StikDebugApp: App {
 
     var body: some Scene {
         WindowGroup {
-            // 爱定位 · 启动门禁：卡密激活/会员到期/封禁/免责声明/公告
+            // 精苹果 · 启动门禁：卡密激活/会员到期/封禁/免责声明/公告
             LicenseGateView()
                 .task {
                     await downloadMissingDeveloperDiskImageFiles()

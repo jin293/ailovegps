@@ -2,7 +2,7 @@
 //  FeedbackView.swift
 //  StikDebug
 //
-//  爱定位 · 意见反馈：问题描述 + 图片/视频附件提交到后台
+//  精苹果 · 意见反馈：问题描述 + 图片/视频附件提交到后台
 //
 
 import SwiftUI

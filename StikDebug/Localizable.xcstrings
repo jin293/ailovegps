@@ -7,13 +7,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "使用 爱定位 为已安装应用启用 JIT 编译。"
+            "value" : "使用 精苹果 为已安装应用启用 JIT 编译。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "使用 爱定位 为已安装应用启用 JIT 编译。"
+            "value" : "使用 精苹果 为已安装应用启用 JIT 编译。"
           }
         }
       }
@@ -92,13 +92,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "使用 爱定位 终止设备上的进程。"
+            "value" : "使用 精苹果 终止设备上的进程。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "使用 爱定位 终止设备上的进程。"
+            "value" : "使用 精苹果 终止设备上的进程。"
           }
         }
       }
@@ -1690,13 +1690,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "爱定位 不应该手动为 LiveContainer 启用 JIT，正确的启动方式应该是在 LiveContainer 设置中选择 JIT 启用器为 爱定位，然后在应用设置中启用 “使用 JIT 运行”，之后正常打开应用，它会自动跳转到 爱定位 。"
+            "value" : "精苹果 不应该手动为 LiveContainer 启用 JIT，正确的启动方式应该是在 LiveContainer 设置中选择 JIT 启用器为 精苹果，然后在应用设置中启用 “使用 JIT 运行”，之后正常打开应用，它会自动跳转到 精苹果 。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "爱定位 不应该手动为 LiveContainer 启用 JIT，正确的启动方式应该是在 LiveContainer 设置中选择 JIT 启用器为 爱定位，然后在应用设置中启用 “使用 JIT 运行”，之后正常打开应用，它会自动跳转到 爱定位 。"
+            "value" : "精苹果 不应该手动为 LiveContainer 启用 JIT，正确的启动方式应该是在 LiveContainer 设置中选择 JIT 启用器为 精苹果，然后在应用设置中启用 “使用 JIT 运行”，之后正常打开应用，它会自动跳转到 精苹果 。"
           }
         }
       }
@@ -1707,13 +1707,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "为 爱定位 启用 JIT？"
+            "value" : "为 精苹果 启用 JIT？"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "为 爱定位 启用 JIT？"
+            "value" : "为 精苹果 启用 JIT？"
           }
         }
       }
@@ -1724,13 +1724,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "爱定位 不应该手动附加到本体。为 爱定位 启用 JIT 没有意义。请选择您真正需要启用 JIT 的应用。"
+            "value" : "精苹果 不应该手动附加到本体。为 精苹果 启用 JIT 没有意义。请选择您真正需要启用 JIT 的应用。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "爱定位 不应该手动附加到本体。为 爱定位 启用 JIT 没有意义。请选择您真正需要启用 JIT 的应用。"
+            "value" : "精苹果 不应该手动附加到本体。为 精苹果 启用 JIT 没有意义。请选择您真正需要启用 JIT 的应用。"
           }
         }
       }
@@ -1979,13 +1979,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "设备连接或开发者映像未准备就绪。请直接打开 爱定位，等待连接完成，然后重试。"
+            "value" : "设备连接或开发者映像未准备就绪。请直接打开 精苹果，等待连接完成，然后重试。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "设备连接或开发者映像未准备就绪。请直接打开 爱定位，等待连接完成，然后重试。"
+            "value" : "设备连接或开发者映像未准备就绪。请直接打开 精苹果，等待连接完成，然后重试。"
           }
         }
       }
@@ -2030,13 +2030,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "爱定位 无法启动或附加到所选应用。请检查 VPN 是否已启用，配对文件是否为最新，并且应用仍已安装。"
+            "value" : "精苹果 无法启动或附加到所选应用。请检查 VPN 是否已启用，配对文件是否为最新，并且应用仍已安装。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "爱定位 无法启动或附加到所选应用。请检查 VPN 是否已启用，配对文件是否为最新，并且应用仍已安装。"
+            "value" : "精苹果 无法启动或附加到所选应用。请检查 VPN 是否已启用，配对文件是否为最新，并且应用仍已安装。"
           }
         }
       }
@@ -2234,13 +2234,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "爱定位 只能连接到具有 \"get-task-allow\" 权限的应用。"
+            "value" : "精苹果 只能连接到具有 \"get-task-allow\" 权限的应用。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "爱定位 只能连接到具有 \"get-task-allow\" 权限的应用。"
+            "value" : "精苹果 只能连接到具有 \"get-task-allow\" 权限的应用。"
           }
         }
       }
@@ -2965,13 +2965,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "输入 爱定位 显示的代码或通知中的代码。"
+            "value" : "输入 精苹果 显示的代码或通知中的代码。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "输入 爱定位 显示的代码或通知中的代码。"
+            "value" : "输入 精苹果 显示的代码或通知中的代码。"
           }
         }
       }
@@ -2999,13 +2999,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在这台设备上，爱定位 在打开设置时仍然在运行。对于另一台设备，请保持此屏幕打开以查看其代码。"
+            "value" : "在这台设备上，精苹果 在打开设置时仍然在运行。对于另一台设备，请保持此屏幕打开以查看其代码。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在这台设备上，爱定位 在打开设置时仍然在运行。对于另一台设备，请保持此屏幕打开以查看其代码。"
+            "value" : "在这台设备上，精苹果 在打开设置时仍然在运行。对于另一台设备，请保持此屏幕打开以查看其代码。"
           }
         }
       }
@@ -3169,13 +3169,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "现在被 爱定位 使用"
+            "value" : "现在被 精苹果 使用"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "现在被 爱定位 使用"
+            "value" : "现在被 精苹果 使用"
           }
         }
       }
@@ -3220,13 +3220,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "配对文件已保存在 爱定位 中。您也可以将其放置在受支持的应用中或导出它。"
+            "value" : "配对文件已保存在 精苹果 中。您也可以将其放置在受支持的应用中或导出它。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "配对文件已保存在 爱定位 中。您也可以将其放置在受支持的应用中或导出它。"
+            "value" : "配对文件已保存在 精苹果 中。您也可以将其放置在受支持的应用中或导出它。"
           }
         }
       }
@@ -3849,13 +3849,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "爱定位"
+            "value" : "精苹果"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "爱定位"
+            "value" : "精苹果"
           }
         }
       }
@@ -4529,13 +4529,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "配置 爱定位"
+            "value" : "配置 精苹果"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "配置 爱定位"
+            "value" : "配置 精苹果"
           }
         }
       }
@@ -5175,13 +5175,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "连接 LocalDevVPN，然后返回 爱定位 并重试。"
+            "value" : "连接 LocalDevVPN，然后返回 精苹果 并重试。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "连接 LocalDevVPN，然后返回 爱定位 并重试。"
+            "value" : "连接 LocalDevVPN，然后返回 精苹果 并重试。"
           }
         }
       }
@@ -5192,13 +5192,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "重新连接 LocalDevVPN，然后返回 爱定位 并重试。"
+            "value" : "重新连接 LocalDevVPN，然后返回 精苹果 并重试。"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "重新连接 LocalDevVPN，然后返回 爱定位 并重试。"
+            "value" : "重新连接 LocalDevVPN，然后返回 精苹果 并重试。"
           }
         }
       }

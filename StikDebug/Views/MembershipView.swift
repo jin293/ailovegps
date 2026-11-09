@@ -2,7 +2,7 @@
 //  MembershipView.swift
 //  StikDebug
 //
-//  爱定位 · 会员中心：会员状态、卡密兑换、开通会员入口、联系客服
+//  精苹果 · 会员中心：会员状态、卡密兑换、开通会员入口、联系客服
 //
 
 import SwiftUI

@@ -17,7 +17,7 @@
 		</dict>
 	</array>
 		<key>NSLocalNetworkUsageDescription</key>
-	<string>爱定位需要访问本地网络中的设备，以便连接并调试您的设备。</string>
+	<string>精苹果需要访问本地网络中的设备，以便连接并调试您的设备。</string>
 	<key>NSBonjourServices</key>
 	<array>
 		<string>_remotepairing._tcp</string>
@@ -43,7 +43,7 @@
 				<string>com.apple.package</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>爱定位工具包</string>
+			<string>精苹果工具包</string>
 			<key>UTTypeIconFiles</key>
 			<array/>
 			<key>UTTypeIdentifier</key>

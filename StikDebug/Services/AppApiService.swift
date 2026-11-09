@@ -2,7 +2,7 @@
 //  AppApiService.swift
 //  StikDebug
 //
-//  爱定位 · 卡密验证 / 会员状态 / 公告 / 免责声明 / 反馈 的网络层与状态管理
+//  精苹果 · 卡密验证 / 会员状态 / 公告 / 免责声明 / 反馈 的网络层与状态管理
 //
 
 import Foundation
@@ -11,7 +11,7 @@ import UIKit
 
 /// 后台服务地址（部署后台后按实际地址修改）
 enum AppApiConfig {
-    /// 爱定位 App 后台地址（对应「爱定位App后台」部署地址，可带反代子路径）
+    /// 精苹果 App 后台地址（对应「精苹果App后台」部署地址，可带反代子路径）
     static let baseURL = URL(string: "https://www.lovegps.top/appapi")!
     static let timeout: TimeInterval = 15
 }

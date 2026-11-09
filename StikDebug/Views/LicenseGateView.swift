@@ -2,7 +2,7 @@
 //  LicenseGateView.swift
 //  StikDebug
 //
-//  爱定位 · 启动门禁：免责声明 → 卡密激活 → 会员状态拦截（到期/封禁）→ 公告 → 主界面
+//  精苹果 · 启动门禁：免责声明 → 卡密激活 → 会员状态拦截（到期/封禁）→ 公告 → 主界面
 //
 
 import SwiftUI
@@ -82,7 +82,7 @@ struct ActivationView: View {
                     .resizable().aspectRatio(contentMode: .fit)
                     .frame(width: 88, height: 88)
                     .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
-                Text("爱定位")
+                Text("精苹果")
                     .font(.title.weight(.semibold))
                 Text("请输入卡密激活后使用")
                     .font(.subheadline)

@@ -51,7 +51,7 @@ struct SettingsView: View {
                                 .resizable().aspectRatio(contentMode: .fit)
                                 .frame(width: 80, height: 80)
                                 .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-                            Text("爱定位").font(.title2.weight(.semibold))
+                            Text("精苹果").font(.title2.weight(.semibold))
                         }
                         Spacer()
                     }
